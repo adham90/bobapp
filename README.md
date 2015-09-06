@@ -8,7 +8,7 @@
 
         git clone https://github.com/bobdrop/bobapp.git
 
- > If you want to simulate the production environment install vagrant and then run `vagrant up` inside the project dir
+ > If you love to simulate the production environment install vagrant and then run `vagrant up` inside the project dir
 
 2. Create a new Branch:
 
@@ -81,4 +81,3 @@
   * Ensure that the "Files Changed" incorporate all of your changes.
   * Fill in some details about your potential patch including a meaningful title.
   * Click "Send pull request".
-
