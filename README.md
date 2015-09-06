@@ -1,10 +1,14 @@
+[![Code Climate](https://codeclimate.com/github/bobdrop/bobapp/badges/gpa.svg)](https://codeclimate.com/github/bobdrop/bobapp)
+[![Test Coverage](https://codeclimate.com/github/bobdrop/bobapp/badges/coverage.svg)](https://codeclimate.com/github/bobdrop/bobapp/coverage)
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/bobdrop/bobapp?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[![Throughput Graph](https://graphs.waffle.io/bobdrop/bobapp/throughput.svg)](https://waffle.io/bobdrop/bobapp/metrics)
 ## Contributing (Step-by-step) :memo:
 
 1. Clone the Repo:
 
         git clone https://github.com/bobdrop/bobapp.git
 
- > If you love to simulate the production environment install vagrant and thin run `vagrant up` inside the project dir
+ > If you love to simulate the production environment install vagrant and then run `vagrant up` inside the project dir
 
 2. Create a new Branch:
 
@@ -77,4 +81,3 @@
   * Ensure that the "Files Changed" incorporate all of your changes.
   * Fill in some details about your potential patch including a meaningful title.
   * Click "Send pull request".
-
