@@ -2,7 +2,38 @@
 [![Test Coverage](https://codeclimate.com/github/bobdrop/bobapp/badges/coverage.svg)](https://codeclimate.com/github/bobdrop/bobapp/coverage)
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/bobdrop/bobapp?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 [![Throughput Graph](https://graphs.waffle.io/bobdrop/bobapp/throughput.svg)](https://waffle.io/bobdrop/bobapp/metrics)
+
+# Setup the environment
+
+### Install Ruby
+
+We recommend you to use one of the Ruby version control. We mainly use Ruby 2.2.2.
+
+**Using RVM**
+
+If you're using RVM then you might want to run
+
+> rvm use --create --ruby-version 2.2.2@bobdrop
+
+
+### Installation
+
+To get rolling, start by copying config/database.yml.copy into config/database.yml
+
+> cp config/database.yml.copy config/database.yml
+
+And update the database configuration settings according to your environment, then bundle
+
+> bundle install
+
+After bundler finishes installing, migrate the database and run the server.
+
+> rake db:migrate rails s
+
+
+
 ## Contributing (Step-by-step) :memo:
+
 
 1. Clone the Repo:
 
