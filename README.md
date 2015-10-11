@@ -48,6 +48,8 @@ After bundler finishes installing, migrate the database and run the server.
 
  git remote add upstream git@github.com:bobdrop/bobapp.git
 
+ > git remote add upstream git@github.com:bobdrop/bobapp.git
+
  git fetch upstream
 
  git merge upstream/master
