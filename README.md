@@ -41,12 +41,24 @@ After bundler finishes installing, migrate the database and run the server.
 
  > If you love to simulate the production environment install vagrant and then run `vagrant up` inside the project dir
 
+ 1.1 **HowTo keep in sync your git repository for bobdrop**
+
+ We recommend you to add bobdrop/bobapp as upstream
+
+ > git remote add upstream git@github.com:bobdrop/bobapp.git
+
+ git fetch upstream
+
+ git merge upstream/master
+
+
 2. Create a new Branch:
 
         cd bobapp
         git checkout -b new_bobapp_branch
 
  > Please keep your code clean: one feature or bug-fix per branch. If you find another bug, you want to fix while being in a new branch, please fix it in a separated branch instead.
+
 
 3. Code
   * Adhere to common conventions you see in the existing code
