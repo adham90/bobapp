@@ -1,0 +1,9 @@
+= simple_form_for(@poll) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :aasm_state
+    = f.association :product
+
+  .form-actions
+    = f.button :submit

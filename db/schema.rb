@@ -11,6 +11,35 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20151006141845) do
 
+  create_table "drops", force: :cascade do |t|
+    t.datetime "end_at"
+    t.string   "aasm_state", limit: 255
+    t.integer  "product_id", limit: 4
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+  end
+
+  add_index "drops", ["product_id"], name: "index_drops_on_product_id", using: :btree
+
+  create_table "polls", force: :cascade do |t|
+    t.string   "aasm_state", limit: 255
+    t.integer  "product_id", limit: 4
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+  end
+
+  add_index "polls", ["product_id"], name: "index_polls_on_product_id", using: :btree
+
+  create_table "products", force: :cascade do |t|
+    t.string   "name",        limit: 255
+    t.string   "description", limit: 255
+    t.decimal  "msrp",                    precision: 10
+    t.datetime "created_at",                             null: false
+    t.datetime "updated_at",                             null: false
+  end
+
+  add_foreign_key "drops", "products"
+  add_foreign_key "polls", "products"
 end

@@ -1,0 +1,10 @@
+= simple_form_for(@drop) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :end_at
+    = f.input :aasm_state
+    = f.association :product
+
+  .form-actions
+    = f.button :submit

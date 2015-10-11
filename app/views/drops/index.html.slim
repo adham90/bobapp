@@ -1,0 +1,25 @@
+h1 Listing drops
+
+table
+  thead
+    tr
+      th End at
+      th Aasm state
+      th Product
+      th
+      th
+      th
+
+  tbody
+    - @drops.each do |drop|
+      tr
+        td = drop.end_at
+        td = drop.aasm_state
+        td = drop.product
+        td = link_to 'Show', drop
+        td = link_to 'Edit', edit_drop_path(drop)
+        td = link_to 'Destroy', drop, data: {:confirm => 'Are you sure?'}, :method => :delete
+
+br
+
+= link_to 'New Drop', new_drop_path

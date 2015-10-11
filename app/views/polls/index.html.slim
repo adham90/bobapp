@@ -1,0 +1,23 @@
+h1 Listing polls
+
+table
+  thead
+    tr
+      th Aasm state
+      th Product
+      th
+      th
+      th
+
+  tbody
+    - @polls.each do |poll|
+      tr
+        td = poll.aasm_state
+        td = poll.product
+        td = link_to 'Show', poll
+        td = link_to 'Edit', edit_poll_path(poll)
+        td = link_to 'Destroy', poll, data: {:confirm => 'Are you sure?'}, :method => :delete
+
+br
+
+= link_to 'New Poll', new_poll_path
