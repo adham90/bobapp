@@ -44,13 +44,16 @@ After bundler finishes installing, migrate the database and run the server.
  1.1 **HowTo keep in sync your git repository for bobdrop**
 
  We recommend you to add bobdrop/bobapp as upstream
+ ```
+
+ git remote add upstream git@github.com:bobdrop/bobapp.git
 
  > git remote add upstream git@github.com:bobdrop/bobapp.git
 
  git fetch upstream
 
  git merge upstream/master
-
+```
 
 2. Create a new Branch:
 
